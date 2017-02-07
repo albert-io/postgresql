@@ -146,7 +146,7 @@ temp_file_limit = {{postgresql_temp_file_limit}}			# limits per-session temp fil
 max_files_per_process = {{postgresql_max_files_per_process}}		# min 25
 					# (change requires restart)
 shared_preload_libraries = '{{postgresql_shared_preload_libraries|join(',')}}'		# (change requires restart)
-
+pg_stat_statements.track = '{{postgresql_pg_stat_statements_track}}'
 # - Cost-Based Vacuum Delay -
 
 vacuum_cost_delay = {{postgresql_vacuum_cost_delay}}			# 0-100 milliseconds
